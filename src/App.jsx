@@ -1,14 +1,14 @@
-import { Nav } from "./components/NavBar.jsx";
-import { Button } from "flowbite-react";
+
 import "./App.css";
 import profile from "./assets/profile.png";
 import { IoLogoGithub } from "react-icons/io5";
-import { FaLinkedin } from "react-icons/fa";
+import { FaLinkedin, FaPaperPlane } from "react-icons/fa";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { TbBrandFlutter } from "react-icons/tb";
-import { faCss3Alt, faJava, faJs, faReact } from "@fortawesome/free-brands-svg-icons";
+import { faCss3Alt, faJava, faJs, faReact} from "@fortawesome/free-brands-svg-icons";
 import { faHtml5 } from "@fortawesome/free-brands-svg-icons/faHtml5";
 import { TailwindIcon } from './components/TailwindIcon.jsx'
+
 
 
 function App() {
@@ -29,20 +29,25 @@ function App() {
             </h1>
           </div>
           <div className=" card col-span-2 bg-transparent"></div>
-          <div className=" card col-span-2 place-content-center items-center">
-            <IoLogoGithub
+          <div className=" card col-span-1 place-content-center items-center">
+          <IoLogoGithub
               className="m-2 hover:scale-125 duration-200 cursor-pointer"
               color="black"
-              size="35"
+              size="55"
             />
             <FaLinkedin
               className=" cursor-pointer hover:scale-125  duration-200 m-2"
               color="blue"
-              size="35"
+              size="55"
             />
           </div>
-          <div className=" card col-span-3 flex flex-col">
-            <h2 className=" text-3xl font-mono p-3 text-black">My skills</h2>
+          <div className=" card col-span-4 font-mono text-2xl p-8 block bg-blue-400">
+          Soy <span className="typing-1 text-black">Técnico Superior en Desarrollo de Software</span> con cuatro años de experiencia, A mis 23 años, viviendo en Mendoza, busco constantemente nuevos desafíos para crecer profesionalmente y contribuir con soluciones innovadoras.
+          Mi principal motivación en la programación es la lógica y la resolución de problemas. 
+          </div>
+          
+          <div className=" card col-span-3 flex flex-col bg-slate-800">
+            <h2 className=" text-3xl font-mono p-3 text-white">My skills</h2>
             <div className=" flex flex-wrap p-5 place-content-around gap-4 grow">
               <FontAwesomeIcon icon={faCss3Alt} style={{ color: "#0a89eb" }} size="3x" />
               <FontAwesomeIcon icon={faHtml5} style={{color: "#efbb01",}} size="3x"/>
@@ -55,8 +60,19 @@ function App() {
               
             </div>
           </div>
-          <div className=" card ">article</div>
-          <div className=" card ">article</div>
+          <div className=" card col-span-2 place-content-center items-center">
+            <section className="p-10 m-5">
+              <span className=" font-mono text-xl">Contact me</span>
+              <div className=" m-4 border-2 w-72 p-2 rounded-2xl flex">
+
+              <span className="typing-2">
+                franconicolasgaldame@gmail.com
+              </span>
+              <FaPaperPlane className="ml-auto items-center" />
+              </div>
+            </section>
+          </div>
+          
           <div className=" card ">article</div>
           <div className=" card col-span-2 ">article</div>
         </div>
