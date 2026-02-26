@@ -1,42 +1,15 @@
+/* Cleaned up App.css */
 #root {
-  max-width: 1280px;
-  margin: 0;
-  padding: 0;
-  text-align: center;
+  width: 100%;
+  margin: 0 auto;
 }
 
-
-/* .typing-1{
-  font-family: monospace;
-  white-space: nowrap;
-  color: black;
-  border-right: 4px solid;
-  width: 1ch;
-
-  animation: typing-1 3s steps(44)
-    infinite alternate;
-  overflow: hidden;
-} */
-
-
-/* @keyframes typing-1 {
-  from { width: 0ch;}
-  to { width: 44ch;}
-} */
-
-.typing-2{
-  display: block;
-  font-family: monospace;
-  white-space: nowrap;
-  color: black;
-  border-right: 4px solid;
-  width: 32ch;
-
-  animation: typing-2 5s steps(32),
-  blink .5s  step-end infinite alternate;
-  overflow: hidden;
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
 }
-@keyframes typing-2 {
-  from { width: 0ch;}
-  to { width: 32ch;}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
 }
