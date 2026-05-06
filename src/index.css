@@ -24,7 +24,7 @@ html {
 
 @layer components {
   .glass-card {
-    @apply bg-white/5 backdrop-blur-xl border border-white/10 rounded-[2rem] overflow-hidden;
+    @apply bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl sm:rounded-[2rem] overflow-hidden;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
